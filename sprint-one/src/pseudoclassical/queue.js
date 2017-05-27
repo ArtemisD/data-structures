@@ -23,3 +23,5 @@ Queue.prototype.dequeue = function() {
 Queue.prototype.size = function() {
   return this.newest - this.oldest;
 };
+
+var createQueue = new Queue();
