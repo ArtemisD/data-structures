@@ -1,11 +1,11 @@
 var Queue = function() {
   // Hey! Rewrite in the new style. Your code will wind up looking very similar,
   // but try not not reference your old code in writing the new style.
-  var someInstance = Object.create(queueMethods);
-  someInstance.storage = {};
-  someInstance.newest = 0;
-  someInstance.oldest = 0;
-  return someInstance;
+  var newQueue = Object.create(queueMethods);
+  newQueue.storage = {};
+  newQueue.newest = 0;
+  newQueue.oldest = 0;
+  return newQueue;
 };
 
 var queueMethods = {};
