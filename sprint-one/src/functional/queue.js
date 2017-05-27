@@ -9,7 +9,7 @@ var Queue = function() {
   // Implement the methods below
 
   someInstance.enqueue = function(value) {
-    //assign valu to 'newest' key
+    //assign value to 'newest' key
     storage[newest] = value;
     //increment newest
     newest++;
