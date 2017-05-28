@@ -3,7 +3,9 @@ var Tree = function(value) {
   newTree.value = value;
 
   // your code here
-  newTree.children = null;  // fix me
+  newTree.children = [];  // fix me
+
+  _.extend(newTree, treeMethods);
 
   return newTree;
 };
@@ -11,9 +13,26 @@ var Tree = function(value) {
 var treeMethods = {};
 
 treeMethods.addChild = function(value) {
+  this.children.push(Tree(value));
+
 };
 
 treeMethods.contains = function(target) {
+  var isTrue = false;
+  //will need to make recursive function to search all children
+  var searchChildren = function (tree) {
+    //check if tree value is equal to target
+    if (tree.value === target) {
+      isTrue = true;
+      return isTrue;
+    }
+    //check all children
+    for (var i = 0; i < tree.children.length; i++) {
+      searchChildren(tree.children[i]);
+    }
+  };
+  searchChildren(this);
+  return isTrue;
 };
 
 
