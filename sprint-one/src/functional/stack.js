@@ -18,7 +18,7 @@ var Stack = function() {
     if (counter > 0) {
       counter--;
     }
-    
+
     return current;
   };
 
