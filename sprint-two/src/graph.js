@@ -12,9 +12,8 @@ Graph.prototype.addNode = function(node) {
 
 // Return a boolean value indicating if the value passed to contains is represented in the graph.
 Graph.prototype.contains = function(node) {
-  //return true or false if there is a value at key
+  //return true or false if node exists as a key
   return this.nodes[node] !== undefined;
-
 };
 
 // Removes a node from the graph.
@@ -29,7 +28,7 @@ Graph.prototype.removeNode = function(node) {
       this.nodes[key].splice(index, 1);
     }
   }
-  //remove value at this.nodes[node]
+  //remove this.nodes[node]
   delete this.nodes[node];
   return this;
 };
@@ -75,7 +74,7 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 Graph.prototype.forEachNode = function(cb) {
   //iterate through all keys
   for (var key in this.nodes) {
-    //call callback functin on every element
+    //call callback function on every element
     cb(key, this.nodes[key]);
   }
 };
