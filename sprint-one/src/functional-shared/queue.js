@@ -8,7 +8,6 @@ var Queue = function() {
   someInstance.oldest = 0;
 
   _.extend(someInstance, queueMethods);
-
   return someInstance;
 };
 var queueMethods = {};
