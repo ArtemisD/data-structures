@@ -50,4 +50,11 @@ Graph.prototype.forEachNode = function(cb) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ addNode: constant since we can add a passed in key directly to the object
+ contains: constant since we can directly check if the passed in key exists in the object
+ removeNode: linear since we're iterating through all the keys in our object
+ hasEdge: constant since we can directly check if the toNode key exists in our fromNode key
+ addEdge: constant since we can add in a key directly to fromNode & toNode
+ removeEdge: constant since we can delete a key directly from fromNode & toNode
+ forEachNode: linear since we're iterating through all the keys
  */
