@@ -39,4 +39,6 @@ treeMethods.contains = function(target) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ addChild: constant, since we're just pushing to the end of an array
+ contains: linear sine we have to check every node
  */

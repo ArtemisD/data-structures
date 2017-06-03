@@ -44,4 +44,5 @@ var Node = function(value) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ constant, since we're going directly to head/tail
  */

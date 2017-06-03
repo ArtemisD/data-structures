@@ -49,8 +49,8 @@ HashTable.prototype.remove = function(k) {
   }
 };
 
+
 /*
  * Complexity: What is the time complexity of the above functions?
- A: The time complexity overall is constant since we are going directly to the index of this._storage, but for the individual functions,
- functions, the time complexity is linear since we are iterating through this._storage[index]
+ A: The time complexity overall is constant since we are going directly to the index of this._storage
  */
