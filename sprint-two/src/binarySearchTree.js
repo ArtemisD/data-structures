@@ -55,7 +55,7 @@ binarySearchTreeMethods.contains = function(target) {
       searchTree(node.right);
     }
   };
-  //call inner recursive functin on tree
+  //call inner recursive function on tree
   searchTree(this);
   return isTrue;
 };

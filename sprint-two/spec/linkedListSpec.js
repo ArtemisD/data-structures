@@ -51,5 +51,12 @@ describe('linkedList', function() {
     expect(linkedList.contains(4)).to.equal(false);
   });
 
+  it('should return the value of the new tail when addToTail is called', function() {
+    linkedList.addToTail(4);
+    linkedList.addToTail(6);
+    linkedList.addToTail(8);
+    expect(linkedList.tail.value).to.equal(8);
+  });
+
   // add more tests here to test the functionality of linkedList
 });

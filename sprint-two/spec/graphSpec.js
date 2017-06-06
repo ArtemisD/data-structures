@@ -20,6 +20,16 @@ describe('graph', function() {
     expect(graph.contains(1)).to.equal(true);
   });
 
+  it('"contains" should return a boolean value', function() {
+    graph.addNode(1);
+    graph.addNode(3);
+    graph.addNode(5);
+    graph.removeNode(1);
+    expect(graph.contains(1)).to.equal(false);
+    expect(graph.contains(3)).to.equal(true);
+    expect(graph.contains(5)).to.equal(true);
+  });
+
   it('should remove nodes that were inserted', function() {
     graph.addNode(2);
     expect(graph.contains(2)).to.equal(true);
